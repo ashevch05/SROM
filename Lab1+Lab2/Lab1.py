@@ -234,14 +234,12 @@ test_associativity()
 
 print('------------------------Time_Testing------------------------')
 
-import time
 
-# Функція для вимірювання часу виконання функцій
 def measure_time(func, *args):
-    start_time = time.time()  # Початковий час
-    result = func(*args)     # Викликаємо функцію
-    end_time = time.time()    # Кінцевий час
-    execution_time = end_time - start_time  # Різниця в часі
+    start_time = time.time() 
+    result = func(*args)     
+    end_time = time.time()    
+    execution_time = end_time - start_time  
     return result, execution_time
 
 
