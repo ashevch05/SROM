@@ -3,7 +3,7 @@ class GaloisField:
     def __init__(self, m, irreducible_poly):
         self.m = m
         self.irreducible_poly = irreducible_poly
-        self.modulus = 1 << m  # 2^m
+        self.modulus = 1 << m  
 
     def to_bitstring(self, a):
         """Перетворення елемента у m-бітний рядок"""
@@ -181,7 +181,7 @@ def measure_time_for_operations(field, a, b, m, num_trials=1000):
 
     for _ in range(num_trials):
         start = time.perf_counter()
-        field.power(a, int('1001', 2))  # Example: Raise to power 9
+        field.power(a, int('1001', 2))  
         end = time.perf_counter()
         times["Power"].append(end - start)
 
